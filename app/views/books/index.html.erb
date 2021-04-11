@@ -1,12 +1,12 @@
-<h1> Books </h1>
+<h1 class = 'title'> Books </h1>
 
 <% @book.each do |book| %>
     <p>  <%= book.author %>
     <br>
-        <%= link_to book.title , "/books/#{book.id}" %>
+    <%= link_to book.title , "/books/#{book.id}" %>
     <br>
         <%= book.year %> 
     </p>
 <% end %> 
 
-<%= link_to "Create new book", '/books/new' %>
+<%= link_to "Create new book", '/books/new', :class => 'link' %>
