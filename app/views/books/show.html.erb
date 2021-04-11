@@ -1,11 +1,30 @@
 <h1 class = "title"> <%= @book.title %> </h1> 
 <br> 
-    <p>    
-        <%= @book.author %>
+    <p>  
+    
+    <div id = "container2">
+
+    <div>  
+        <h1 id = 'author'> The author </h1>
+      <h2>  <%= @book.author %> </h2>
+    </div> 
+
         <br>
-        <%= @book.title %>
+
+    <div>
+    <h1 id = 'title'> The title </h1>
+        <h2> <%= @book.title %> </h2>
+    </div> 
+
         <br>
-        <%= @book.year %> 
+
+    <div>
+        <h1 id = 'year'> Year printed </h1>
+        <h2> <%= @book.year %> </h2>
+    </div>
+
+    </div>
+
     </p>
 
     <%= link_to "Edit book", edit_book_url, :class => 'link' %>
