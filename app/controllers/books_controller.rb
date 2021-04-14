@@ -40,6 +40,14 @@ class BooksController < ApplicationController
 
     end 
 
+    def about 
+        :about
+    end 
+
+    def our_mission
+        :our_mission
+    end 
+
 
     def show
         @book = Book.find(params[:id])

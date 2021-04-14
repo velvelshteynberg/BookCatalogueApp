@@ -10,6 +10,20 @@
   </head>
 
   <body>
+
+<div class = 'menu'>
+  <h2> <p> <%= link_to "About us", about_page_path %> </p>  </h2> 
+  <h2> <p> <%= link_to "Create New Book", new_book_path %> </p> </h2> 
+  <img src = 'https://cdn.lifehack.org/wp-content/uploads/2015/03/books-everyone-should-read.jpeg' alt = 'picture unavailable' class = 'image2'> 
+  <h2> <p> <%= link_to "Our Books", books_path %> </p> </h2>  
+  <h2> <p> <%= link_to "Our Mission", our_mission_path %> </p> </h2> 
+</div>
+
     <%= yield %>
+
+<div> 
+<h3> Contact us </h3> 
+</div> 
+
   </body>
 </html>
