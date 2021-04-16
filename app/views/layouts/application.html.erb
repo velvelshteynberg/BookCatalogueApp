@@ -12,11 +12,11 @@
   <body>
 
 <div class = 'top_menu'>
-  <h2> <p> <%= link_to "About us", about_page_path %> </p>  </h2> 
-  <h2> <p> <%= link_to "Create New Book", new_book_path %> </p> </h2> 
+  <h2> <p> <%= link_to "About us", about_page_path, :class => "top_menu_links" %> </p>  </h2> 
+  <h2> <p> <%= link_to "Create New Book", new_book_path, :class => "top_menu_links" %> </p> </h2> 
   <%= image_tag('https://cdn.lifehack.org/wp-content/uploads/2015/03/books-everyone-should-read.jpeg', :class => ('image_in_top_menu')) %> 
-  <h2> <p> <%= link_to "Our Books", books_path %> </p> </h2>  
-  <h2> <p> <%= link_to "Our Mission", our_mission_path %> </p> </h2> 
+  <h2> <p> <%= link_to "Our Books", books_path, :class => "top_menu_links" %> </p> </h2>  
+  <h2> <p> <%= link_to "Our Mission", our_mission_path, :class => "top_menu_links" %> </p> </h2> 
 </div>
 
     <%= yield %>
