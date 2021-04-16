@@ -5,6 +5,7 @@
 
 // about page is code 1
 // show page is code 2
+
 h1 {
     color: #322A26;
 }
@@ -39,24 +40,38 @@ h2 {
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    height: 700px;
+    height: 300px;
     width: 100%;
 }
 
+.about_page_text_div1-1_header {
+    margin-left: 9%;
+}
 .about_page_text_div1-1 {
     max-width: 60%;
+    float: left;
+    height: 100%;
+}
+
+.about_page_text_div1-1_text {
+    margin-left: 9%;
 }
 
 .about_page_image_div1-2 {
+    display: flex;
+    align-items: center;
     max-width: 40%;
+    float: right;
+    height: 100%;
 }
 
 .about_page_image1-2-1{
-    width: 305px;
-    height: 305px;
+    margin-top: 50%;
+    margin-bottom: 50%;
     margin-left: 25%;
     margin-right: 25%;
     border: solid 2px black;
+    width: 50%;
 }
 
 .about_page_div2 {
@@ -64,7 +79,7 @@ h2 {
     justify-content: space-evenly;
     flex-wrap: wrap;
     width: 100%;
-    height: 700px; 
+    height: 300px; 
 }
 
 .about_page_div2_left_side {
@@ -75,11 +90,13 @@ h2 {
 }
 
 .about_page_div2_left_side_image {
-    width: 305px; 
-    height: 305px;
+    width: 50%; 
     border: solid 2px black;
+    justify-content: center;
     margin-left: 25%;
     margin-right: 25%;
+    margin-top: 25%;
+    margin-bottom: 25%;
 }
 
 .about_page_div2_right_side {
@@ -88,8 +105,33 @@ h2 {
 }
 
 .about_page_div2_right_side_text {
-    justify-content: center;
+    margin-right: 9%;
 }
 
 
+.new_div1 {
+    display: flex; 
+    
+    width: 100%;
+    height: 500px;
+}
+
+.new_div1_right_side {
+    float: right ;
+    width: 50%;
+    
+}
+
+.new_div1_right_side_image {
+   width: 100%;
+}
+
+.new_div1_left_side {
+    float: left;
+    width: 50%;
+}
+
+.new_div1_left_side_form {
+    width: 100%;
+}
 

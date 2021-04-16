@@ -1,14 +1,15 @@
-<h1 class = 'title'> Add a Book </h1>
-  <div id= 'container'> 
+<h1> Add a Book </h1>
+  <div class = 'new_div1'> 
 
-  <div id = 'right_column'> 
-    <img src = 'https://cdn.elearningindustry.com/wp-content/uploads/2016/05/top-10-books-every-college-student-read-1024x640.jpeg' alt = "Picture unavailable" class = 'image_size'> 
+  <div class = 'new_div1_right_side'> 
+    <%= image_tag('https://cdn.elearningindustry.com/wp-content/uploads/2016/05/top-10-books-every-college-student-read-1024x640.jpeg', :class => 'new_div1_right_side_image') %> 
   </div> 
 
 
-  <div id = 'left_column'> 
-  <h1> <p class = 'title_height'> New Book Form </p> </h2> 
+<div class = 'new_div1_left_side'> 
+<h1> New Book Form </h1> 
 
+<div class = 'new_div1_left_side_form'> 
 <%= form_for @book do |f|  %>
 
   <p>
@@ -34,6 +35,7 @@
   </p>
 
 <% end %>
+</div> 
 
 </div> 
 
@@ -41,6 +43,6 @@
 
 <br>
 
-<%= link_to "See all books", books_url, :class => 'link' %>
+<%= link_to "See all books", books_url %>
 
-<%= link_to "Menu page", 'about_page_path' %> 
+<%= link_to "Menu page", about_page_path %> 
