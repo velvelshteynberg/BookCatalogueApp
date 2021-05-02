@@ -149,7 +149,11 @@ h2 {
 
 .show_div_1 {
     border: solid 1px black;
-    margin: 50px;
+    width: 300px;
+    height: 50px; 
+    margin: auto;
+    border-radius: 10%;
+    margin-bottom: 50px;
 }
 
 .show_div_1_text {
@@ -169,6 +173,7 @@ h2 {
     overflow: hidden;
     background-repeat: repeat;
     display: relative; 
+    border-radius: 10%
 }
 
 
